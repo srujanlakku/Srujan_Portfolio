@@ -1,4 +1,5 @@
 import nextPlugin from '@next/eslint-plugin-next';
+import tsParser from '@typescript-eslint/parser';
 
 export default [
   {
@@ -16,6 +17,7 @@ export default [
       '@next/next': nextPlugin,
     },
     languageOptions: {
+      parser: tsParser,
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
