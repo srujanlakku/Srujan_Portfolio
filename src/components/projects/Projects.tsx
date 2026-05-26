@@ -35,7 +35,18 @@ export default function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6 }}
-                className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-950/40 p-6 md:p-8 rounded-lg border border-slate-900/60 shadow-xl relative group overflow-hidden"
+                className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-950/40 p-6 md:p-8 rounded-lg border border-slate-900/60 shadow-xl relative group overflow-hidden cursor-pointer"
+                role="link"
+                tabIndex={0}
+                onClick={(event) => {
+                  if ((event.target as HTMLElement).closest("a")) return;
+                  window.open(project.githubUrl, "_blank", "noopener,noreferrer");
+                }}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    window.open(project.githubUrl, "_blank", "noopener,noreferrer");
+                  }
+                }}
               >
                 {/* Spotlights glow behind project cards */}
                 <div className="absolute top-0 left-0 w-64 h-64 bg-cyan-500/5 rounded-full blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
@@ -80,7 +91,7 @@ export default function Projects() {
                       className="inline-flex items-center gap-1.5 px-4 py-2 font-mono text-xs tracking-wider text-slate-300 bg-slate-900 border border-slate-800 rounded hover:bg-slate-800 hover:text-white hover:border-cyan-500/30 transition-all shadow-md"
                     >
                       <Github className="w-4 h-4" />
-                      <span>REPOSITORY</span>
+                      <span>VIEW PROJECT</span>
                     </a>
                     {project.liveUrl && (
                       <a

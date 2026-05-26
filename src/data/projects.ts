@@ -31,7 +31,7 @@ export const projectsData: Project[] = [
       { name: "Evaluator", description: "Background agent grades responses semantically against reference solutions." },
       { name: "Compiler", description: "Generates comprehensive JSON/PDF report containing deep diagnostic metrics." }
     ],
-    githubUrl: "https://github.com/srujanlakku/ai-interview-agent",
+    githubUrl: "https://github.com/srujanlakku/Ai_interview_agent",
     liveUrl: "https://ai-interview-agent.srujanlakku.dev",
     category: "Agentic AI"
   },
@@ -48,7 +48,7 @@ export const projectsData: Project[] = [
       { name: "Hint Engine", description: "Compares current student state to the target concept vector map." },
       { name: "Synthesizer", description: "Outputs conversational prompts that nudge the student to deduce answers." }
     ],
-    githubUrl: "https://github.com/srujanlakku/tattva-ai-tutor",
+    githubUrl: "https://github.com/srujanlakku/Tattva_The_AI_Tutor",
     liveUrl: "https://tattva.srujanlakku.dev",
     category: "EdTech AI"
   },
@@ -65,7 +65,7 @@ export const projectsData: Project[] = [
       { name: "Vector Index", description: "Stores and indexes embeddings in high-performance ChromaDB." },
       { name: "Retrieval", description: "Executes cosine-similarity query followed by dense cross-encoder reranking." }
     ],
-    githubUrl: "https://github.com/srujanlakku/personal-knowledge-brain",
+    githubUrl: "https://github.com/srujanlakku/My_Personal_knowledge_brain_",
     category: "RAG & Search"
   }
 ];

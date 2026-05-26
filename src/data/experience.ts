@@ -11,7 +11,7 @@ export const experienceData: TimelineEvent[] = [
   {
     company: "Zennial Pro Pvt Ltd",
     role: "GenAI & Agentic AI Developer",
-    period: "2024 - Present",
+    period: "2025 - Present",
     description: "Architecting and building production-ready Agentic AI systems, automated RAG pipelines, and high-performance microservices for enterprise automation clients.",
     achievements: [
       "Engineered multi-agent orchestration states using LangGraph and FastAPI, reducing manual workflows by 60%.",
@@ -24,7 +24,7 @@ export const experienceData: TimelineEvent[] = [
   {
     company: "Intellipaat",
     role: "AI & Backend Engineering Intern",
-    period: "2023 - 2024",
+    period: "2024 - 2025",
     description: "Contributed to building data science models, Python-based automation pipelines, and core SQL database structures.",
     achievements: [
       "Developed custom Python utility scripts to automate batch data extraction and parsing from various formats (CSV, PDF, HTML).",
